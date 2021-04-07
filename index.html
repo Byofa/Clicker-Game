@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+  <head>
+    <title>Click & Bulde</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body onload="displayGolds();automatiser();displayGPS(),displayMarket()">
+  <header id="header" class="alt">
+    <h1><strong>Click & Bulde</strong></h1>
+    <section id="gold"></section>
+    <section id="gps"></section>
+  </header>
+  <main>
+  <button class="button" onclick="addGold(click_gold)">Click</button><br />
+    <ul id="market">
+	  <img src="css/slime.png">
+      <li>Un Slime coûte <a id="Slime cost"></a> GOLDS et donne <a id="Slime gps"></a> GPS<button onclick="buyMinion(0)" class="button">Acheter unité</button></li><br />
+      <img src="css/undead.png">
+	  <li>Un Undead coûte <a id="Undead cost"></a> GOLDS et donne <a id="Undead gps"></a> GPS<button onclick="buyMinion(1)" class="button">Acheter unité</button></li><br />
+      <img src="css/bongo.png">
+	  <li>Un Bongo coûte <a id="Bongo cost"></a> GOLDS et donne <a id="Bongo gps"></a> GPS<button onclick="buyMinion(2)" class="button">Acheter unité</button></li><br />
+      <img src="css/imp.png">
+	  <li>Un Imp coûte <a id="Imp cost"></a> GOLDS et donne <a id="Imp gps"></a> GPS<button onclick="buyMinion(3)" class="button">Acheter unité</button></li><br />
+      <img src="css/jarode.png">
+	  <li>Un Jarode coûte <a id="Jarode cost"></a> GOLDS et donne <a id="Jarode gps"></a> GPS<button onclick="buyMinion(4)" class="button">Acheter unité</button></li>
+    </ul><br />
+    <button class="button" onclick="resetGame()" >Recommencer</button>
+  </main>
+  <footer>
+      <strong>&copy;Machado.F & Nouar.S</strong>
+  </footer>
+  </body>
+</html>
